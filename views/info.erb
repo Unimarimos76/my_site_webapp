@@ -1,0 +1,12 @@
+<h1>Info</h1>
+
+<% @infos.each do |info| %>
+  <p>名前は、<%= info[:name] %></p>
+  <p>年齢は、<%= info[:age] %></p>
+
+  <ul>
+    <% info[:favorites].each do |favorite| %>
+      <li> <%= favorite %></li>
+    <% end %>
+  </ul>
+<% end %>
